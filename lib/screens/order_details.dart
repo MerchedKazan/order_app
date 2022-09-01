@@ -18,10 +18,14 @@ class OrderDetails extends StatefulWidget {
 
 class _OrderDetailsState extends State<OrderDetails> {
   // double total=0.0;
+  initalizeNotification()async{
+    await LocalNotification.initialize();
+  }
   @override
   void initState() {
     // TODO: implement initState
     super.initState();
+    initalizeNotification();
     // widget.orderModel.items?.forEach((element) {
     //   total+=double.parse(element.price??"0.0");
     // });

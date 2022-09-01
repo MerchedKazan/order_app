@@ -10,7 +10,7 @@ class Audio_PLayer{
  final url=await player.load("remove.mp3");
  await audioPlayer.setUrl(url.path,isLocal: true);
 await audioPlayer.play(
-   url.path,
+   url.path
  );
 }
 }
