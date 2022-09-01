@@ -29,6 +29,7 @@ static Future initialize()async{
       iOS: initializationSettingsIOS);
   await _localNotificationsPlugin.initialize(initializationSettings);
 }
+
   static Future showNotification({
     int id = 0,
     String? title,
